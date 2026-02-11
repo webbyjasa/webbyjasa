@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Webby Jasa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(8px);
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:600;
+    font-size:18px;
+}
+
+.logo-box{
+    width:32px;
+    height:32px;
+    border:2px solid white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:6px;
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    gap:40px;
+   
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:400;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#ddd;
+}
+
+.nav-icon{
+    font-size:20px;
+    cursor:pointer;
+}
+
+/* ===== HERO ===== */
+.hero{
+    height:100vh;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.9)
+        ),
+        url('https://images.unsplash.com/photo-1553877522-43269d4ea984');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    opacity:0.9;
+}
+
+.hero a{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 32px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+}
+
+/* ===== SECTION ===== */
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+/* ===== PORTFOLIO ===== */
+.portfolio{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1a1a1a;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+/* ===== WHY CHOOSE US ===== */
+.why{
+    background:#111;
+}
+
+.why-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.why-box{
+    background:#1a1a1a;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.why-box:hover{
+    transform:translateY(-8px);
+}
+
+.why-box i{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:30px;
+    opacity:0.6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .nav-links{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">
+        <div class="logo-box">W</div>
+        Webby Jasa
+    </div>
+
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="fitur.html">Fitur</a>
+        <a href="portofolio.html">Portofolio</a>
+         <a href="Tentang.html">Tentang Kami</a>
+           <a href="contact.html">Kontak</a>
+    </div>
+
+    <div class="nav-icon">
+        <i class="fas fa-desktop"></i>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1>Portfolio Webby Jasa</h1>
+        <p>
+            Kumpulan contoh website modern dan responsif
+            untuk mendukung kebutuhan digital Anda.
+        </p>
+        <a href="#portfolio">Lihat Portfolio</a>
+    </div>
+</div>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+    <div class="section-title">
+        <h2>Proyek Contoh</h2>
+    </div>
+
+    <div class="portfolio">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+            <div class="card-content">
+                <h3>Website UMKM</h3>
+                <p>Website bisnis sederhana untuk UMKM lokal.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+            <div class="card-content">
+                <h3>Landing Page Jasa</h3>
+                <p>Landing page modern untuk jasa profesional.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0">
+            <div class="card-content">
+                <h3>Company Profile</h3>
+                <p>Website profil perusahaan yang elegan.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why">
+    <div class="section-title">
+        <h2>Kenapa Memilih Webby Jasa?</h2>
+        <p>Kami berkomitmen memberikan hasil terbaik untuk bisnis Anda</p>
+    </div>
+
+    <div class="why-container">
+        <div class="why-box">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Desain Modern</h3>
+            <p>Tampilan profesional dan mengikuti tren desain terbaru.</p>
+        </div>
+
+        <div class="why-box">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Responsive</h3>
+            <p>Optimal di semua perangkat.</p>
+        </div>
+
+        <div class="why-box">
+            <i class="fas fa-bolt"></i>
+            <h3>Cepat & Ringan</h3>
+            <p>Website dioptimalkan agar loading cepat.</p>
+        </div>
+
+        <div class="why-box">
+            <i class="fas fa-headset"></i>
+            <h3>Support Cepat</h3>
+            <p>Siap membantu melalui WhatsApp.</p>
+        </div>
+    </div>
+</section>
+
+ <footer style="background:#0c0c0c; color:#e2e8f0; padding:60px 10%; font-family:Arial, sans-serif;">
+  
+  <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:40px;">
+    
+    <!-- Kolom 1 -->
+    <div style="flex:1; min-width:250px;">
+      <h2 style="color:#ffffff; margin-bottom:15px;">WEBBY JASA</h2>
+      <p style="font-size:14px; line-height:1.6;">
+        Jasa pembuatan website profesional dan terpercaya di Indonesia.
+      </p>
+    </div>
+
+    <!-- Kolom 2 -->
+    <div style="flex:1; min-width:200px;">
+      <h3 style="color:#ffffff; margin-bottom:15px;">Kategori</h3>
+      <p style="margin:6px 0; font-size:14px;">Website Company Profile</p>
+      <p style="margin:6px 0; font-size:14px;">Website UMKM</p>
+      <p style="margin:6px 0; font-size:14px;">Landing Page</p>
+      <p style="margin:6px 0; font-size:14px;">Website Portfolio</p>
+    </div>
+
+    <!-- Kolom 3 -->
+    <div style="flex:1; min-width:250px;">
+      <h3 style="color:#ffffff; margin-bottom:15px;">Kontak</h3>
+      <p style="margin:6px 0; font-size:14px;">Email: julvyaditya@gmail.com</p>
+      <p style="margin:6px 0; font-size:14px;">Phone: 087894940282</p>
+      <p style="margin:6px 0; font-size:14px;">Instagram: @webby_jasa</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div style="border-top:1px solid #334155; margin-top:40px; padding-top:20px; text-align:center; font-size:14px; color:#94a3b8;">
+    © 2026 Webby Jasa. All rights reserved.
+  </div>
+
+</footer>
+
+</body>
+</html>

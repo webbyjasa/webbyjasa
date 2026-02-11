@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Webby Jasa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    height:100vh;
+    background:linear-gradient(135deg,#2b2b2b,#000000);
+    color:white;
+}
+
+/* ===== BANNER ===== */
+.banner{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background-image: url(../img/ytr.jpg);
+   
+}
+
+.banner-content{
+    max-width:700px;
+}
+
+.banner-content h1{
+    font-size:3rem;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.banner-content p{
+    font-size:1.1rem;
+    opacity:0.85;
+    margin-bottom:35px;
+    line-height:1.6;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+    padding:14px 36px;
+    font-size:1rem;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(135deg,#555,#111);
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:linear-gradient(135deg,#777,#222);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .banner-content h1{
+        font-size:2.2rem;
+    }
+
+    .banner-content p{
+        font-size:1rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="banner">
+    <div class="banner-content">
+        <h1>Selamat Datang di Webby Jasa</h1>
+        <p>
+            Webby Jasa adalah solusi pembuatan website modern dan responsif
+            untuk membantu bisnis dan personal brand tampil profesional
+            di dunia digital.
+        </p>
+
+        <button class="btn" onclick="kunjungi()">Kunjungi Sekarang</button>
+    </div>
+</div>
+
+<script>
+function kunjungi(){
+    // ganti tujuan sesuai kebutuhan
+    window.location.href = "home.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitur & Layanan - Webby Jasa</title>
+
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+     <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* ================= NAVBAR ================= */
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(8px);
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-brand span.logo {
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .navbar-nav .nav-link {
+            margin: 0 12px;
+            transition: 0.3s linear;
+           
+        }
+
+        .navbar-nav .nav-link:hover {
+            border-bottom: 2px solid #fffdfd;
+        }
+
+        /* ================= HERO (ABU-ABU) ================= */
+        .hero {
+            position: relative;
+            background: #eef1f3; /* abu abu */
+            padding: 160px 0;
+            text-align: center;
+            overflow: hidden;
+            background-image: url(../img/srv.jpg);
+           
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(
+                to bottom,
+                rgba(63, 59, 59, 0.007) 0%,
+                rgba(26, 25, 25, 0) 60%,
+                #000 100%
+            );
+        }
+
+        /* ================= SECTION HITAM ================= */
+        section {
+            background-color: #000;
+        }
+
+        .feature-card {
+            background: #111;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(255,255,255,0.1);
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .text-muted {
+            color: #aaa !important;
+        }
+
+        /* ================= LAYANAN ================= */
+        .services-card {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .services-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(255,255,255,0.1);
+        }
+
+        .services-card i {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #0d6efd;
+        }
+
+        footer {
+            background: #000;
+            color: #aaa;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <span class="logo">W</span>
+            <strong>Webby Jasa</strong>
+        </a>
+
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="fitur.html">Fitur</a></li>
+                 <li class="nav-item"><a class="nav-link" href="portofolio.html">Portofolio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Tentang.html">Tentang Kami</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+                 
+
+               
+                
+               
+                
+
+            </ul>
+        </div>
+
+        <div class="d-none d-lg-block text-white">
+            <i class="fa-solid fa-desktop fs-4"></i>
+        </div>
+
+    </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="container">
+        <h1 class="fw-bold">Fitur & Layanan Kami</h1>
+        <p class="lead">Solusi lengkap untuk mendukung kebutuhan bisnis dan digital Anda</p>
+        <a href="#fitur" class="btn btn-light btn-lg mt-3">Lihat Fitur</a>
+    </div>
+</section>
+
+<!-- ================= FITUR ================= -->
+<section class="py-5" id="fitur">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Fitur Unggulan</h2>
+            <p class="text-muted">Teknologi dan kemudahan dalam satu platform</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Fitur 1 -->
+            <div class="col-md-4">
+                <div class="card p-4 text-center feature-card border-0">
+                    <i class="fa-solid fa-gauge-high feature-icon"></i>
+                    <h5 class="fw-bold">Performa Cepat</h5>
+                    <p class="text-muted">Website dengan loading cepat dan stabil.</p>
+                </div>
+            </div>
+            <!-- Fitur 2 -->
+            <div class="col-md-4">
+                <div class="card p-4 text-center feature-card border-0">
+                    <i class="fa-solid fa-shield-halved feature-icon"></i>
+                    <h5 class="fw-bold">Keamanan Tinggi</h5>
+                    <p class="text-muted">Proteksi data dengan sistem keamanan terbaik.</p>
+                </div>
+            </div>
+            <!-- Fitur 3 -->
+            <div class="col-md-4">
+                <div class="card p-4 text-center feature-card border-0">
+                    <i class="fa-solid fa-mobile-screen feature-icon"></i>
+                    <h5 class="fw-bold">Responsif</h5>
+                    <p class="text-muted">Tampilan optimal di semua perangkat.</p>
+                </div>
+            </div>
+            <!-- Fitur 4 -->
+            <div class="col-md-4">
+                <div class="card p-4 text-center feature-card border-0">
+                    <i class="fa-solid fa-cloud feature-icon"></i>
+                    <h5 class="fw-bold">Bebas Custom(no Backend)</h5>
+                    <p class="text-muted">Desain dan fitur dapat disesuaikan dengan kebutuhan bisnis.</p>
+                </div>
+            </div>
+            <!-- Fitur 5 -->
+            <div class="col-md-4">
+                <div class="card p-4 text-center feature-card border-0">
+                    <i class="fa-solid fa-chart-line feature-icon"></i>
+                    <h5 class="fw-bold">SEO Friendly</h5>
+                    <p class="text-muted">Struktur website dirancang agar mudah terindeks mesin pencari di Google.</p>
+                </div>
+            </div>
+            <!-- Fitur 6 -->
+            <div class="col-md-4">
+                <div class="card p-4 text-center feature-card border-0">
+                    <i class="fa-solid fa-headset feature-icon"></i>
+                    <h5 class="fw-bold">Support 24/7</h5>
+                    <p class="text-muted">Tim support siap membantu kapan saja.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= LAYANAN KAMI ================= -->
+<section class="py-5" id="layanan">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Layanan Kami</h2>
+            <p class="text-muted">Lihat apa saja yang Webby Jasa bisa bantu untuk Anda</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="services-card">
+                    <i class="fa-solid fa-globe"></i>
+                    <h5 class="fw-bold">Pembuatan Website</h5>
+                    <p>Buat website profesional sesuai kebutuhan bisnis Anda.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="services-card">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h5 class="fw-bold">Landing Page Promosi</h5>
+                    <p>Landing page fokus konversi untuk promosi produk, jasa, event, atau campaign online.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="services-card">
+                    <i data-feather="zoom-in"></i>
+                    <h5 class="fw-bold">UI/UX Design</h5>
+                    <p>Desain antarmuka menarik untuk pengalaman pengguna terbaik.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="services-card">
+                    <i class="fa-solid fa-server"></i>
+                    <h5 class="fw-bold">Hosting & Cloud</h5>
+                    <p>Solusi server cepat, aman, dan handal untuk website Anda.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="services-card">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h5 class="fw-bold">Digital Marketing</h5>
+                    <p>Meningkatkan visibilitas bisnis melalui strategi digital efektif.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="services-card">
+                    <i class="fa-solid fa-headset"></i>
+                    <h5 class="fw-bold">Support & Maintenance</h5>
+                    <p>Dukungan penuh 24/7 agar sistem Anda selalu berjalan lancar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+ <footer style="background:#0c0c0c; color:#e2e8f0; padding:60px 10%; font-family:Arial, sans-serif;">
+  
+  <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:40px;">
+    
+    <!-- Kolom 1 -->
+    <div style="flex:1; min-width:250px;">
+      <h2 style="color:#ffffff; margin-bottom:15px;">WEBBY JASA</h2>
+      <p style="font-size:14px; line-height:1.6;">
+        Jasa pembuatan website profesional dan terpercaya di Indonesia.
+      </p>
+    </div>
+
+    <!-- Kolom 2 -->
+    <div style="flex:1; min-width:200px;">
+      <h3 style="color:#ffffff; margin-bottom:15px;">Kategori</h3>
+      <p style="margin:6px 0; font-size:14px;">Website Company Profile</p>
+      <p style="margin:6px 0; font-size:14px;">Website UMKM</p>
+      <p style="margin:6px 0; font-size:14px;">Landing Page</p>
+      <p style="margin:6px 0; font-size:14px;">Website Portfolio</p>
+    </div>
+
+    <!-- Kolom 3 -->
+    <div style="flex:1; min-width:250px;">
+      <h3 style="color:#ffffff; margin-bottom:15px;">Kontak</h3>
+      <p style="margin:6px 0; font-size:14px;">Email: julvyaditya@gmail.com</p>
+      <p style="margin:6px 0; font-size:14px;">Phone: 087894940282</p>
+      <p style="margin:6px 0; font-size:14px;">Instagram: @webby_jasa</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div style="border-top:1px solid #334155; margin-top:40px; padding-top:20px; text-align:center; font-size:14px; color:#94a3b8;">
+    © 2026 Webby Jasa. All rights reserved.
+  </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    feather.replace();
+</script>
+</body>
+</html>

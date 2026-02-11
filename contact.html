@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak | Webby Jasa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <script src="https://unpkg.com/feather-icons"></script>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(8px);
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:600;
+}
+
+.logo-box{
+    width:32px;
+    height:32px;
+    border:2px solid white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:6px;
+    font-weight:700;
+}
+
+.navbar .navbar-extra a {
+  color: #f3efef;
+  margin: 0 0.5rem;
+  
+}
+.navbar .navbar-extra a:hover {
+  color: #4e4d4d;
+}
+
+.nav-links{
+    display:flex;
+    gap:40px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#ccc;
+}
+
+/* ===== HERO ===== */
+.hero{
+    height:55vh;
+    background:
+        linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.9)),
+        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+/* ===== SECTION ===== */
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+/* ===== CONTACT ===== */
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    max-width:900px;
+    margin:auto;
+}
+
+.contact-box{
+    background:#1a1a1a;
+    padding:35px 25px;
+    border-radius:16px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.contact-box:hover{
+    transform:translateY(-8px);
+}
+
+.contact-box i{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.contact-box a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.contact-box p{
+    opacity:0.8;
+    margin-top:5px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:30px;
+    opacity:0.6;
+}
+
+@media(max-width:768px){
+    .nav-links{
+        display:none;
+    }
+    .hero h1{
+        font-size:2.2rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">
+        <div class="logo-box">W</div>
+        Webby Jasa
+    </div>
+
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="fitur.html">Fitur</a>
+        <a href="portofolio.html">Portofolio</a>
+        <a href="Tentang.html">Tentang Kami</a>
+        <a href="contact.html">Contact</a>
+    </div>
+     <div class="navbar-extra">
+        <a href="#" id="search">  <i data-feather="code"></i></a>
+        <a href="#" id="coffee">  <i data-feather="monitor"></i></a>
+        
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Hubungi Kami</h1>
+</div>
+
+<!-- CONTACT -->
+<section>
+    <div class="section-title">
+        <h2>Kontak Webby Jasa</h2>
+        <p>Kami siap membantu kebutuhan website Anda</p>
+    </div>
+
+    <div class="contact-container">
+
+        <!-- Instagram -->
+        <div class="contact-box">
+            <i class="fab fa-instagram"></i>
+            <h3>Instagram</h3>
+            <a href="https://instagram.com/webby_jasa" target="_blank">
+                @webby_jasa
+            </a>
+            <p>DM kapan saja</p>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="contact-box">
+            <i class="fab fa-whatsapp"></i>
+            <h3>WhatsApp</h3>
+            <a href="https://wa.me/6287894940282" target="_blank">
+                0878-9494-0282
+            </a>
+            <p>Respon cepat</p>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-box">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <a href="mailto:julvyaditya@gmail.com">
+                julvyaditya@gmail.com
+            </a>
+            <p>Kirim kebutuhan Anda</p>
+        </div>
+
+    </div>
+</section>
+
+<footer style="background:#161616; color:#e2e8f0; padding:60px 10%; font-family:Arial, sans-serif;">
+  
+  <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:40px;">
+    
+    <!-- Kolom 1 -->
+    <div style="flex:1; min-width:250px;">
+      <h2 style="color:#ffffff; margin-bottom:15px;">WEBBY JASA</h2>
+      <p style="font-size:14px; line-height:1.6;">
+        Jasa pembuatan website profesional dan terpercaya di Indonesia.
+      </p>
+    </div>
+
+    <!-- Kolom 2 -->
+    <div style="flex:1; min-width:200px;">
+      <h3 style="color:#ffffff; margin-bottom:15px;">Kategori</h3>
+      <p style="margin:6px 0; font-size:14px;">Website Company Profile</p>
+      <p style="margin:6px 0; font-size:14px;">Website UMKM</p>
+      <p style="margin:6px 0; font-size:14px;">Landing Page</p>
+      <p style="margin:6px 0; font-size:14px;">Website Portfolio</p>
+    </div>
+
+    <!-- Kolom 3 -->
+    <div style="flex:1; min-width:250px;">
+      <h3 style="color:#ffffff; margin-bottom:15px;">Kontak</h3>
+      <p style="margin:6px 0; font-size:14px;">Email: julvyaditya@gmail.com</p>
+      <p style="margin:6px 0; font-size:14px;">Phone: 087894940282</p>
+      <p style="margin:6px 0; font-size:14px;">Instagram: @webby_jasa</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div style="border-top:1px solid #334155; margin-top:40px; padding-top:20px; text-align:center; font-size:14px; color:#94a3b8;">
+    © 2026 Webby Jasa. All rights reserved.
+  </div>
+
+</footer>
+
+
+
+<script>
+    feather.replace();
+</script>
+
+</body>
+</html>

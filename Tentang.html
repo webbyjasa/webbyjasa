@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tentang Kami | Webby Jasa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(8px);
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:600;
+}
+
+.logo-box{
+    width:32px;
+    height:32px;
+    border:2px solid white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:6px;
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    gap:40px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#ccc;
+}
+
+/* ===== HERO ===== */
+.hero{
+    height:60vh;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.9)
+        ),
+        url('https://images.unsplash.com/photo-1551434678-e076c223a692');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+/* ===== SECTION ===== */
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+/* ===== ABOUT CONTENT ===== */
+.about-content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.about-content p{
+    margin-bottom:20px;
+    line-height:1.7;
+    opacity:0.9;
+}
+
+/* ===== VISION MISSION ===== */
+.vm-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    margin-top:40px;
+}
+
+.vm-box{
+    background:#1a1a1a;
+    padding:30px;
+    border-radius:16px;
+    text-align:center;
+}
+
+.vm-box i{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+/* ===== VALUES ===== */
+.values{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.value-box{
+    background:#1a1a1a;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.value-box i{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+/* ===== CTA ===== */
+.cta{
+    background:linear-gradient(135deg,#ffffff,#dcdcdc);
+    color:black;
+    text-align:center;
+    padding:60px 20px;
+    border-radius:20px;
+}
+
+.cta a{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 32px;
+    background:black;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:30px;
+    opacity:0.6;
+}
+
+@media(max-width:768px){
+    .vm-container{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">
+        <div class="logo-box">W</div>
+        Webby Jasa
+    </div>
+
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="fitur.html">Fitur</a>
+        <a href="portofolio.html">Portfolio</a>
+        <a href="Tentang.html">Tentang</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Tentang Webby Jasa</h1>
+</div>
+
+<!-- ABOUT -->
+<section>
+    <div class="about-content">
+        <p>
+            Webby Jasa adalah layanan pembuatan website modern dan responsif 
+            yang membantu bisnis berkembang di era digital.
+        </p>
+
+        <p>
+            Kami berfokus pada desain yang bersih, performa cepat,
+            dan pengalaman pengguna yang optimal agar website tidak hanya terlihat bagus,
+            tetapi juga menghasilkan.
+        </p>
+    </div>
+
+    <div class="vm-container">
+        <div class="vm-box">
+            <i class="fas fa-eye"></i>
+            <h3>Visi</h3>
+            <p>Menjadi solusi digital terpercaya bagi bisnis di Indonesia.</p>
+        </div>
+
+        <div class="vm-box">
+            <i class="fas fa-bullseye"></i>
+            <h3>Misi</h3>
+            <p>Menyediakan website berkualitas dengan harga terjangkau dan support terbaik.</p>
+        </div>
+    </div>
+</section>
+
+<!-- VALUES -->
+<section>
+    <div class="section-title">
+        <h2>Nilai Kami</h2>
+    </div>
+
+    <div class="values">
+        <div class="value-box">
+            <i class="fas fa-laptop-code"></i>
+            <h4>Modern</h4>
+            <p>Desain mengikuti tren terbaru.</p>
+        </div>
+
+        <div class="value-box">
+            <i class="fas fa-mobile-alt"></i>
+            <h4>Responsive</h4>
+            <p>Optimal di semua perangkat.</p>
+        </div>
+
+        <div class="value-box">
+            <i class="fas fa-headset"></i>
+            <h4>Support</h4>
+            <p>Respons cepat dan profesional.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section>
+    <div class="cta">
+        <h2>Siap Bekerja Sama Dengan Kami?</h2>
+        <p>Mari bangun website profesional untuk bisnis Anda.</p>
+        <a href="contact.html">Hubungi Kami</a>
+    </div>
+</section>
+
+<footer>
+© 2026 Webby Jasa. All rights reserved.
+</footer>
+
+</body>
+</html>
